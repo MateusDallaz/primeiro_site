@@ -1,0 +1,92 @@
+body {
+    background-color: rgb(228, 227, 227);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.conteudo {
+    flex: 1 0 auto;
+    text-align: center;
+}
+
+.conteudo::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header {
+    font-size: 1.5em;
+    text-align: center;
+    transition: 1s;
+    filter:drop-shadow(0px 20px 20px rgb(0, 0, 0));
+}
+
+header:hover {
+    letter-spacing: 5px;
+    filter:drop-shadow(0px 50px 50px rgb(50, 50, 50));
+}
+
+main {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: 2px;
+    width: 500px;
+    height: 275px;
+}
+
+.localizacao {
+    float:right;
+    margin-top: 8%;
+    margin-right: 2%;
+    filter:drop-shadow(0px 50px 50px rgb(129, 212, 129))
+}   
+
+.img1 {
+    float: center;
+    margin-left: 15%;
+    margin-bottom: 2%;
+    filter:drop-shadow(0px 50px 50px black);
+}
+
+.arredondamento {
+    width: 350px;
+    height: 350px;
+    border-radius: 25%;
+    object-fit: cover;
+}
+
+nav {
+    background-color: rgb(53, 53, 53);
+    padding: 10px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+}
+
+a.Inicio:hover {
+    text-decoration: line-through;
+}
+
+a:hover {
+    letter-spacing: 4px;
+    text-decoration: underline;
+}
+
+footer {
+    flex-shrink: 0;
+    background-color: rgb(53, 53, 53);
+    color: white;
+    text-align: center;
+}
